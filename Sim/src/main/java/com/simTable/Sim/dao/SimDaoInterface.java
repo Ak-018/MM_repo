@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.simTable.Sim.entity.SimTable;
 
 @Repository
-public interface SimDaoInterface extends JpaRepository<SimTable, String> {
+public interface SimDaoInterface extends JpaRepository<SimTable, Long> {
 
 }

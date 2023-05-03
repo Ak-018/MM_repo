@@ -13,9 +13,9 @@ public interface SimServiceInterface {
 
 	public List<SimTable> getAllProfileService();
 
-	public SimTable getProfileService(String uid);
+	public SimTable getProfileService(Long uid);
 
-	public String deleteProfileService(String uid);
+	public String deleteProfileService(Long uid);
 
 	public String editProfileService(SimTable iu);
 

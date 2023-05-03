@@ -29,17 +29,17 @@ public List<SimTable> viewAll(){
 }
 
 @GetMapping("viewProfile/{id}")
-public SimTable viewProfile(@PathVariable("id")String uid){
+public SimTable viewProfile(@PathVariable("id")Long uid){
 	return simsi.getProfileService(uid);
 }
 
 @DeleteMapping("deleteProfile/{id}")
-public String deleteProfile(@PathVariable("id")String uid){
+public String deleteProfile(@PathVariable("id")Long uid){
 	return simsi.deleteProfileService(uid);
 }
 
 @PutMapping("editProfile/{id}")
-public String editProfile(@PathVariable("id")String uid,@RequestBody SimTable iu){
+public String editProfile(@PathVariable("id")Long uid,@RequestBody SimTable iu){
 	return simsi.editProfileService(iu);
 }
 

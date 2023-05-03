@@ -31,7 +31,7 @@ public class SimService implements SimServiceInterface {
 	}
 
 	@Override
-	public SimTable getProfileService(String uid) {
+	public SimTable getProfileService(Long uid) {
 			SimTable ss= null;
 		Optional<SimTable>	oo = idao.findById(uid);
 		if(oo.isPresent()) {
@@ -41,7 +41,7 @@ public class SimService implements SimServiceInterface {
 		}
 
 	@Override
-	public String deleteProfileService(String uid) {
+	public String deleteProfileService(Long uid) {
 		     idao.deleteById(uid);
 				return "Profile deleted !";
 		}
